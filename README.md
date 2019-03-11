@@ -19,7 +19,7 @@
 ```
 dist/
     hw4.md
-	hw4-1.png
+    hw4-1.png
     hw4-2.png
     hw4-3.png
 src/
