@@ -10,13 +10,13 @@
 
 **提交日期：2019年3月11日**
 
-
+ 
 
 ## 摘要
 
 本次作业主要介绍一下五个方面内容：其一、BMP类型的文件格式，通过MATLAB读取二进制文件的方式对某特定的BMP文件进行分析；其二、通过MATLAB编程的方式，将8bit位图转换为更低bit的位图，并进行比较；其三、本文通过使用MATLAB计算处所给定图像的均值和方差；其四、本文使用MATLAB使用近邻、双线性和双三次插值法将低像素密度的图像像素进行提高；其五、本文通过变换矩阵对给定的图像进行shear和旋转的变换。
 
-
+ 
 
 ## 作业实验任务 
 
@@ -24,19 +24,21 @@
 
 空域低通滤波器：分别用高斯滤波器和中值滤波器去平滑测试图像 test1 和 test2 ，模板大小分别是 3x3 ， 5x5 ， 7x7 ；分析各自优缺点；
 
+<div align=center><img src="https://latex.codecogs.com/gif.latex?\sum_{i=0}^{N}\LaTeX_{i}" alt="\sum_{i=0}^{N}\LaTeX_{i}"/></div>
 
+ 
 
 ### 二、高斯滤波器
 
 利用固定方差 sigma=1.5 产生高斯滤波器。附件有产生高斯滤波器的方法；分析各自优缺点；
 
-
+ 
 
 ### 三、高通滤波器
 
 利用高通滤波器滤波测试图像 test3, test4 ：包括 unsharp masking, Sobel edge detector, and Laplace edge detection, Canny algorithm 。分析各自优缺点。
 
-
+ 
 
 ## 附录
 
