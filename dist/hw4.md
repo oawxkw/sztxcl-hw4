@@ -28,9 +28,11 @@
 
 中值滤波器 3x3 ， 5x5 ， 7x7 的模板分别为：
 
-<div align=center><img src="https://latex.codecogs.com/gif.latex?Mask_(median)=\left(\begin{matrix}1&2&3\\4&5&6\\7&8&9\end{matrix}\right)" alt="Mask_(median)=\left(\begin{matrix}1&2&3\\4&5&6\\7&8&9\end{matrix}\right)"/></div>
+<div align=center><img src="https://latex.codecogs.com/gif.latex?Mask_{median}=\left(\begin{matrix}1&1&1\\1&1&1\\1&1&1\end{matrix}\right)" alt="Mask_{median}=\left(\begin{matrix}1&1&1\\1&1&1\\1&1&1\end{matrix}\right)"/></div>
 
 ![hw4-1.png](https://raw.githubusercontent.com/oawxkw/sztxcl-hw4/master/dist/hw4-1.png)
+
+分析可知：模板尺寸越大噪声约不明显，但是图像更加模糊。
 
  
 
@@ -38,15 +40,47 @@
 
 利用固定方差 sigma=1.5 产生高斯滤波器。附件有产生高斯滤波器的方法；分析各自优缺点；
 
+**高斯滤波器**
+
+高斯滤波器的模板为：
+
+<div align=center><img src="https://latex.codecogs.com/gif.latex?Mask_{gaussian}=\frac{1}{2\pi\sigma^2}\left(\begin{matrix}e^\frac{-2}{2\sigma^2}&e^\frac{-1}{2\sigma^2}&e^\frac{-2}{2\sigma^2}\\e^\frac{-1}{2\sigma^2}&e^\frac{0}{2\sigma^2}&e^\frac{-1}{2\sigma^2}\\e^\frac{-2}{2\sigma^2}&e^\frac{-1}{2\sigma^2}&e^\frac{-2}{2\sigma^2}\\\end{matrix}\right)" alt="Mask_{gaussian}=\frac{1}{2\pi\sigma^2}\left(\begin{matrix}e^\frac{-2}{2\sigma^2}&e^\frac{-1}{2\sigma^2}&e^\frac{-2}{2\sigma^2}\\e^\frac{-1}{2\sigma^2}&e^\frac{0}{2\sigma^2}&e^\frac{-1}{2\sigma^2}\\e^\frac{-2}{2\sigma^2}&e^\frac{-1}{2\sigma^2}&e^\frac{-2}{2\sigma^2}\\\end{matrix}\right)"/></div>
+
 ![hw4-2.png](https://raw.githubusercontent.com/oawxkw/sztxcl-hw4/master/dist/hw4-2.png)
 
+分析可知：模板尺寸越大噪声约不明显，但是图像细节较中值滤波保留更加完整。
+ 
  
 
 ### 三、高通滤波器
 
 利用高通滤波器滤波测试图像 test3, test4 ：包括 unsharp masking, Sobel edge detector, and Laplace edge detection, Canny algorithm 。分析各自优缺点。
 
+**unsharp masking：**
+根据老师 PPT 内容进行设计。
+
+**Sobel edge detector**
+
+Canny edge detector的纵向模板为：
+
+<div align=center><img src="https://latex.codecogs.com/gif.latex?Mask_{median}=\left(\begin{matrix}1&0&-1\\2&0&-2\\1&0&-1\end{matrix}\right)" alt="Mask_{median}=\left(\begin{matrix}1&0&-1\\2&0&-2\\1&0&-1\end{matrix}\right)"/></div>
+
+Sobel edge detector的横向模板为：
+
+<div align=center><img src="https://latex.codecogs.com/gif.latex?Mask_{median}=\left(\begin{matrix}1&2&1\\0&0&0\\-1&-2&-1\end{matrix}\right)" alt="Mask_{median}=\left(\begin{matrix}1&2&1\\0&0&0\\-1&-2&-1\end{matrix}\right)"/></div>
+
+**Laplace edge detection**
+
+Laplace edge detection的模板为：
+
+<div align=center><img src="https://latex.codecogs.com/gif.latex?Mask_{median}=\left(\begin{matrix}1&1&1\\1&-8&1\\1&1&1\end{matrix}\right)" alt="Mask_{median}=\left(\begin{matrix}1&1&1\\1&-8&1\\1&1&1\end{matrix}\right)"/></div>
+
+**Canny algorithm：**
+直接调用 MATLAB 中的函数。
+
 ![hw4-3.png](https://raw.githubusercontent.com/oawxkw/sztxcl-hw4/master/dist/hw4-3.png)
+
+其中 Canny 算法能够较为准确的对边缘进行提取，但是其计算繁琐，相比之下使用 Sobel 边缘检测法能够较为快速准确的对边缘进行提取。
 
  
 
