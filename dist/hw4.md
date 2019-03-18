@@ -61,19 +61,19 @@
 
 **Sobel edge detector**
 
-Canny edge detector的纵向模板为：
+Sobel edge detector的纵向模板为：
 
-<div align=center><img src="https://latex.codecogs.com/gif.latex?Mask_{median}=\left(\begin{matrix}1&0&-1\\2&0&-2\\1&0&-1\end{matrix}\right)" alt="Mask_{median}=\left(\begin{matrix}1&0&-1\\2&0&-2\\1&0&-1\end{matrix}\right)"/></div>
+<div align=center><img src="https://latex.codecogs.com/gif.latex?Mask_{sobely}=\left(\begin{matrix}1&0&-1\\2&0&-2\\1&0&-1\end{matrix}\right)" alt="Mask_{sobely}=\left(\begin{matrix}1&0&-1\\2&0&-2\\1&0&-1\end{matrix}\right)"/></div>
 
 Sobel edge detector的横向模板为：
 
-<div align=center><img src="https://latex.codecogs.com/gif.latex?Mask_{median}=\left(\begin{matrix}1&2&1\\0&0&0\\-1&-2&-1\end{matrix}\right)" alt="Mask_{median}=\left(\begin{matrix}1&2&1\\0&0&0\\-1&-2&-1\end{matrix}\right)"/></div>
+<div align=center><img src="https://latex.codecogs.com/gif.latex?Mask_{sobelx}=\left(\begin{matrix}1&2&1\\0&0&0\\-1&-2&-1\end{matrix}\right)" alt="Mask_{sobelx}=\left(\begin{matrix}1&2&1\\0&0&0\\-1&-2&-1\end{matrix}\right)"/></div>
 
 **Laplace edge detection**
 
 Laplace edge detection的模板为：
 
-<div align=center><img src="https://latex.codecogs.com/gif.latex?Mask_{median}=\left(\begin{matrix}1&1&1\\1&-8&1\\1&1&1\end{matrix}\right)" alt="Mask_{median}=\left(\begin{matrix}1&1&1\\1&-8&1\\1&1&1\end{matrix}\right)"/></div>
+<div align=center><img src="https://latex.codecogs.com/gif.latex?Mask_{laplace}=\left(\begin{matrix}1&1&1\\1&-8&1\\1&1&1\end{matrix}\right)" alt="Mask_{laplace}=\left(\begin{matrix}1&1&1\\1&-8&1\\1&1&1\end{matrix}\right)"/></div>
 
 **Canny algorithm：**
 直接调用 MATLAB 中的函数。
