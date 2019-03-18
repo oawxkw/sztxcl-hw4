@@ -14,7 +14,7 @@
 
 ## 摘要
 
-本次作业主要介绍一下五个方面内容：其一、BMP类型的文件格式，通过MATLAB读取二进制文件的方式对某特定的BMP文件进行分析；其二、通过MATLAB编程的方式，将8bit位图转换为更低bit的位图，并进行比较；其三、本文通过使用MATLAB计算处所给定图像的均值和方差；其四、本文使用MATLAB使用近邻、双线性和双三次插值法将低像素密度的图像像素进行提高；其五、本文通过变换矩阵对给定的图像进行shear和旋转的变换。
+本次作业主要实现空域滤波器的基本应用，本文通过 MATLAB 实现了图像的低通滤波、高斯滤波以及高通滤波三方面内容，此外本文还采用了 unsharp masking, Sobel edge detector, and Laplace edge detection, Canny algorithm 四种方法进行边缘检测与分割。本次实验是我对图像的直方图处理有了更进一步的认识。
 
  
 
@@ -26,17 +26,23 @@
 
 <div align=center><img src="https://latex.codecogs.com/gif.latex?\sum_{i=0}^{N}\LaTeX_{i}" alt="\sum_{i=0}^{N}\LaTeX_{i}"/></div>
 
+![hw4-1.png](https://raw.githubusercontent.com/oawxkw/sztxcl-hw4/master/dist/hw4-1.png)
+
  
 
 ### 二、高斯滤波器
 
 利用固定方差 sigma=1.5 产生高斯滤波器。附件有产生高斯滤波器的方法；分析各自优缺点；
 
+![hw4-2.png](https://raw.githubusercontent.com/oawxkw/sztxcl-hw4/master/dist/hw4-2.png)
+
  
 
 ### 三、高通滤波器
 
 利用高通滤波器滤波测试图像 test3, test4 ：包括 unsharp masking, Sobel edge detector, and Laplace edge detection, Canny algorithm 。分析各自优缺点。
+
+![hw4-3.png](https://raw.githubusercontent.com/oawxkw/sztxcl-hw4/master/dist/hw4-3.png)
 
  
 
