@@ -24,7 +24,11 @@
 
 空域低通滤波器：分别用高斯滤波器和中值滤波器去平滑测试图像 test1 和 test2 ，模板大小分别是 3x3 ， 5x5 ， 7x7 ；分析各自优缺点；
 
-<div align=center><img src="https://latex.codecogs.com/gif.latex?\sum_{i=0}^{N}\LaTeX_{i}" alt="\sum_{i=0}^{N}\LaTeX_{i}"/></div>
+**中值滤波器**
+
+中值滤波器 3x3 ， 5x5 ， 7x7 的模板分别为：
+
+<div align=center><img src="https://latex.codecogs.com/gif.latex?Mask_(median)=\left(\begin{matrix}1&2&3\\4&5&6\\7&8&9\end{matrix}\right)" alt="Mask_(median)=\left(\begin{matrix}1&2&3\\4&5&6\\7&8&9\end{matrix}\right)"/></div>
 
 ![hw4-1.png](https://raw.githubusercontent.com/oawxkw/sztxcl-hw4/master/dist/hw4-1.png)
 
