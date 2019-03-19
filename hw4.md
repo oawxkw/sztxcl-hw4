@@ -28,7 +28,7 @@
 
 中值滤波器 3x3 ， 5x5 ， 7x7 的模板分别为：
 
-<div align=center><img src="https://latex.codecogs.com/gif.latex?Mask_{median}=\left(\begin{matrix}1&1&1\\1&1&1\\1&1&1\end{matrix}\right)" alt="Mask_{median}=\left(\begin{matrix}1&1&1\\1&1&1\\1&1&1\end{matrix}\right)"/></div>
+<div align=center><img src="https://latex.codecogs.com/gif.latex?Mask_{median}=\frac{1}{9}\left(\begin{matrix}1&1&1\\1&1&1\\1&1&1\end{matrix}\right)" alt="Mask_{median}=\frac{1}{9}\left(\begin{matrix}1&1&1\\1&1&1\\1&1&1\end{matrix}\right)"/></div>
 
 ![hw4-1.png](https://raw.githubusercontent.com/oawxkw/sztxcl-hw4/master/dist/hw4-1.png)
 
